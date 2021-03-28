@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {WebView} from 'react-native-webview';
@@ -14,7 +14,6 @@ export default function App() {
     
     <NavigationContainer>
       <Tab.Navigator>
-        <Tab.Screen name="Início" component={Inicio}></Tab.Screen>
         <Tab.Screen name="React" component={RN}></Tab.Screen>
         <Tab.Screen name="Java" component={Java}></Tab.Screen>
         <Tab.Screen name="PHP" component={PHP}></Tab.Screen>
@@ -22,22 +21,6 @@ export default function App() {
       </Tab.Navigator>
     </NavigationContainer>
   );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-    fontSize: '17px',
-  },
-});
-
-function Inicio(){
-  <View style={styles.container}> 
-      <Text>Escolha um vídeo</Text>
-  </View>
 }
 
 function RN(){
