@@ -11,8 +11,10 @@ const Tab = createBottomTabNavigator();
 
 export default function App() {
   return (
+    
     <NavigationContainer>
       <Tab.Navigator>
+        <Tab.Screen name="Início" component={Inicio}></Tab.Screen>
         <Tab.Screen name="React" component={RN}></Tab.Screen>
         <Tab.Screen name="Java" component={Java}></Tab.Screen>
         <Tab.Screen name="PHP" component={PHP}></Tab.Screen>
@@ -28,8 +30,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    fontSize: '17px',
   },
 });
+
+function Inicio(){
+  <View style={styles.container}> Escolha um vídeo abaixo</View>
+}
 
 function RN(){
   return(
