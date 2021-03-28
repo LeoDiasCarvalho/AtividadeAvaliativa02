@@ -35,7 +35,9 @@ const styles = StyleSheet.create({
 });
 
 function Inicio(){
-  <View style={styles.container}> Escolha um vídeo abaixo</View>
+  <View style={styles.container}> 
+      <Text>Escolha um vídeo</Text>
+  </View>
 }
 
 function RN(){
